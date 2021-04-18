@@ -11,7 +11,7 @@ public class DataProvider {
 	private Object[][] dataProvider(Method result) {
 		ExcelFileManager excelFile = null;
 		Object[][] data = null;
-		if (result.getName().equals("TestvalidLogin") || result.getName().equals("TestSalestool")) {
+		if (result.getName().equals("TestvalidLogin")||result.getName().equals("TestInvalidLogin") || result.getName().equals("TestSalestool")) {
 
 			excelFile = new ExcelFileManager();
 			data = excelFile.getTestData("LoginData");
