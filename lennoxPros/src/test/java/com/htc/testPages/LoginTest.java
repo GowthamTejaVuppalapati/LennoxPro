@@ -12,6 +12,7 @@ public class LoginTest extends BaseTest {
 	private void TestvalidLogin(Map<Object, Object> mapData) {
 		loginPage.LOGIN(mapData.get("username").toString(),mapData.get("password").toString());
 	    boolean flag=loginPage.verifyLogin();
+	    System.out.println("Login Successfull");
 	    Assert.assertEquals(true, flag);
 	}
 	
